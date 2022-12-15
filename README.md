@@ -17,7 +17,7 @@ This will create the torchgan_container_hpc_old_latest.sif file in your current 
 I use the Berkeley Deep Drive dataset, with 70k images for training, and 10k images for validation. I reshape the images into 128x128 RGB images that are compiled into large numpy array files which are directly used for training.
 There are two ways to do this:
 1. Download the bdd100k images directly from the available source, and run the ```compile_files_into_numpy.py``` and then the ```turn_smaller.py``` python scripts (while on a well-provisioned node) to create the training and validation files yourself. I won't describe how to do this because I've already done this for you and strongly suggest step 2 instead.
-2. Downlaod the compiled npy files I've already created directly from box. This file is already provided for you. You can directly unzip it into your project folder and use it as I use it. Warning: The resulting files are about 30 GB, since it is uncompressed images. Box link:
+2. Downlaod the compiled npy files I've already created directly from box. This file is already provided for you. You can directly unzip it into your project folder and use it as I use it. Warning: The resulting files are about 30 GB, since it is uncompressed images. [Box link](https://vanderbilt.box.com/s/ghglpa0onuxctq5v5ipuj8pdr2bhn1j7)
 
 ## Change the arguments in the SLURM and python files
 For the SLURM files:
